@@ -36,6 +36,9 @@ public class GeneralUtilities {
 		return text;
 
 	}
+	public void getPageBackward(WebDriver driver) {
+		driver.navigate().back();
+	}
 
 	public boolean isCheckBoxSelected(WebElement element) {
 		boolean check = element.isSelected();
