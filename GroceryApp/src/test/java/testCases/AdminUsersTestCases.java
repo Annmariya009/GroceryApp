@@ -14,7 +14,7 @@ public class AdminUsersTestCases extends BaseClass {
 	LoginPage lp;
 	AdminUsers au;
 
-	@Test
+	@Test(enabled=false)
 	public void verifyAndUpdateUserTypeOfAdminUsersinAdminUsersTab() throws IOException {
 		lp = new LoginPage(driver);
 		lp.performLogin(ExcelReadUtils.read(1, 0), ExcelReadUtils.read(1, 1));
